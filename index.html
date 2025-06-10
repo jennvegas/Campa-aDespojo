@@ -1,0 +1,122 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Territorios para la Vida</title>
+  <link rel="stylesheet" href="csscampana.css" />
+</head>
+<body>
+  <header>
+    <h1>Territorios para la Vida</h1>
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">HISTORIAS</a></li>
+        <li><a href="#">ACCIONES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="serie">
+      <div class="imagen">
+        <img src="../Documents/web campana/Imagenes camapana /1.jpg" alt="Testimonio" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>La voz de la resistencia</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p><strong>Testimonio:</strong> “Nos quieren quitar lo que por generaciones hemos cuidado. La tierra no se vende, se defiende.”</p>
+          <p>Las comunidades que habitan estos territorios enfrentan amenazas constantes por megaproyectos, minería, y políticas injustas. Su lucha no solo es por la tierra, es por la vida y la memoria colectiva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="../Documents/web campana/Imagenes camapana /6.jpg" alt="Mapa de conflictos" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>Territorios en conflicto</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p>Existen decenas de territorios indígenas bajo amenaza. Desde el sureste hasta el norte del país, las comunidades denuncian el despojo, la violencia y la falta de consulta previa, libre e informada.</p>
+          <p>Conoce los casos más representativos y únete a las acciones para visibilizar la problemática.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="../Documents/web campana/Imagenes camapana /5.jpg" alt="Historia y cultura" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>Memoria y territorio</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p>Para los pueblos originarios, el territorio no es solo un espacio físico: es raíz, historia y cultura. Defenderlo es defender sus lenguas, sus costumbres y su identidad colectiva.</p>
+          <p>El despojo rompe vínculos espirituales y sociales fundamentales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="../Documents/web campana/Imagenes camapana /7.jpg" alt="Acción comunitaria" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>Organización y acción</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p>Las comunidades organizadas impulsan asambleas, ferias culturales y brigadas ambientales para proteger sus territorios. Su resistencia activa es una forma de vida.</p>
+          <p>Apóyalas compartiendo, participando o creando redes de solidaridad local e internacional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="../Documents/web campana/Imagenes camapana /Ilustración_sin_título 2.png" alt="Ilustración campaña" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>¿Cómo puedes ayudar?</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p>Infórmate, comparte contenidos, apoya causas y firmas, únete a las campañas. Tu voz también es importante en la defensa de la tierra.</p>
+          <p>Territorios para la Vida nos invita a actuar desde el respeto, la justicia y la empatía.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="botones-pie">
+      <a href="tel:+525630030426" class="btn-footer">+52 56 3003 0426</a>
+      <a href="https://www.instagram.com" target="_blank" class="btn-footer">Instagram</a>
+      <a href="https://www.facebook.com" target="_blank" class="btn-footer">Facebook</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.titulo-serie').forEach(titulo => {
+      titulo.addEventListener('click', () => {
+        const descripcion = titulo.parentElement;
+        descripcion.classList.toggle('active');
+        const flecha = titulo.querySelector('.flecha');
+        flecha.classList.toggle('abierta');
+      });
+    });
+  </script>
+</body>
+</html>
